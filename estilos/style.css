@@ -8,15 +8,18 @@
 body {
     font-family: 'Inconsolata', monospace;
     background-color: #111320;
-    width: 85%;
-    margin: 0 auto;
 }
+
+/* comienza el header */
 
 header {
     padding-top: 2rem;
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 1;
+    width: 85vw;
+    margin: 0 auto;
 }
 
 nav a {
@@ -24,10 +27,6 @@ nav a {
     color: #fff;
     padding: 0.2rem 0.8rem;
     margin-left: 0.5rem;
-}
-
-nav a{
-    transition: all 0.3s ease-in-out;
 }
 
 nav a:focus{
@@ -40,7 +39,11 @@ nav a:hover{
 }
 
 .headerDivEmail:hover{
-    box-shadow: 0.1rem 0.1rem 0.5rem #D76627;
+    box-shadow: 0.1rem 0.1rem 0.8rem #D76627;
+}
+
+.headerDivEmail p:hover{
+    color: #61DAFB;
 }
 
 .burbuja:hover{
@@ -134,6 +137,74 @@ nav a:hover{
     padding: 0.7rem;
 }
 
-.burbuja, .headerDivEmail{
-    transition: box-shadow 0.3s ease-in-out;
+.burbuja, .headerDivEmail, nav a{
+    transition: all 0.3s ease-in-out;
+}
+
+/* comienza el hero */
+
+.hero{
+    border-bottom: 0.2rem solid #D76627;
+}
+
+.divHero{
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heroMiNombre{
+    align-self: flex-end;
+    margin-bottom: 17vh;
+}
+
+.heroMiNombre h2{
+    font-size: 2rem;
+    font-weight: 48;
+}
+
+.fuenteBlanca{
+    color: #fff;
+}
+
+.heroMiNombre h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+.heroDivDerecha{
+    display: flex;
+    justify-content: end;
+}
+
+.heroCode{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.fuenteNaranja{
+    color: #D76627;
+}
+
+.fuenteCeleste{
+    color: #61DAFB;
+}
+
+.heroPrimerSpan{
+    margin-right: 1rem;
+}
+/* el btn no se mueve del lugar con flex */
+.divHeroImagenes{
+    display: flex;
+}
+
+.heroLenguajes{
+    display: flex;
+    flex-direction: column;
+}
+
+.programador{
+    height: 85vh;
 }
