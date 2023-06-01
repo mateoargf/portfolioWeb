@@ -24,6 +24,10 @@ nav a {
     margin-left: 0.5rem;
 }
 
+.burbuja:hover{
+    box-shadow: inset 0 -0.2rem 0.9rem #0772BB;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -97,7 +101,9 @@ nav a {
 }
 
 .linkEmail i {
-    color: linear-gradient(45deg, #61DAFB, #1F56C6);
+    background:linear-gradient(20deg,#00C9FF,#00C9FF,#00C9FF,#00546b,#00546b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 0.95rem;
 }
 
@@ -106,4 +112,8 @@ nav a {
     border-radius: 50%;
     box-shadow: inset 0 -0.2rem 0.7rem rgba(97,218,251,0.3);
     padding: 0.7rem;
+}
+
+.burbuja{
+    transition: box-shadow 0.3s ease-in-out;
 }
