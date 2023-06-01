@@ -15,6 +15,8 @@ body {
 header {
     padding-top: 2rem;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -22,6 +24,19 @@ nav a {
     color: #fff;
     padding: 0.2rem 0.8rem;
     margin-left: 0.5rem;
+}
+
+nav a{
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:focus{
+    border-bottom: 0.2rem solid #D76627;
+}
+
+nav a:hover{
+    border-bottom: 0.2rem solid #D76627;
+    color: #61DAFB;
 }
 
 .headerDivEmail:hover{
@@ -90,6 +105,7 @@ nav a {
     border-radius: 0.3rem;
     margin-left: 1rem;
     padding: 1rem 1.5rem;
+    background-color: #111320;
 }
 
 .headerDivEmail p {
