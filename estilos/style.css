@@ -321,26 +321,34 @@ nav a,
 
 .section2 {
     background-color: #111320;
-    height: 100vh;
+    min-height: 90vh;
     width: 85vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 4rem;
 }
 
 .section2 h2,
-.section3 h2 {
+.section3 h2{
+    margin-top: 5rem;
+}
+
+.section2 h2,
+.section3 h2,
+.section4 h2 {
     color: #61DAFB;
     font-weight: 48;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .section2 h2 span,
-.section3 h2 span {
+.section3 h2 span,
+.section4 h2 span {
     color: #FFF;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
 }
 
 .divSection2 {
@@ -404,7 +412,7 @@ nav a,
 /* cominza section 3*/
 
 .section3{
-    height: 90vh;
+    min-height: 90vh;
     width: 85vw;
     margin: 0 auto;
     display: flex;
@@ -413,3 +421,74 @@ nav a,
     justify-content: space-evenly;
 }
 
+.section3 h2{
+    margin-bottom: 5rem;
+}
+
+.containerFlexSection3{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.containerGridSection3{
+    min-height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-rows: 5rem;
+    grid-gap: 4.3rem 2rem;
+}
+
+.cuadradosSection3{
+    height: 6rem;
+    background-color: #1E2235;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    align-items: center;
+    box-shadow: 0.4rem 0.4rem 0.2rem #0D0E1A;
+}
+
+/* comienza el section 4 */
+
+.section4{
+    min-height: 100vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.section4 h2{
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.timeLine{
+    display: grid;
+    grid-template-columns: 1fr 0.2rem 1fr;
+}
+
+.timeLineComponent{
+    margin-top: 2rem;
+}
+
+.ComponentRight{
+    
+}
+
+.timeLineMiddle{
+    position: relative;
+    background-color: #F17128;
+}
+
+.timeLinePoint{
+    margin-top: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    background-color: #111320;
+    border: 0.2rem solid #F17128;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
