@@ -34,6 +34,8 @@ nav a {
     --heroLenguajesPadding: 0.5rem;
     --heroLenguajesTop: 22%;
     --heroLenguajesRight: 8%;
+
+    --section2HeightIcons: 4.5rem;
 }
 
 nav a:focus {
@@ -284,3 +286,82 @@ nav a {
 }
 
 /* comienza section 2 */
+
+.section2{
+    background-color: #111320;
+    height: 100vh;
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section2 h2{
+    color: #61DAFB;
+    font-weight: 48;
+    font-size: 2rem;
+}
+
+.section2 h2 span{
+    color: #FFF;
+}
+
+.divSection2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divSection2 h3{
+    color: #D76627;
+    font-size: 1.6rem;
+}
+
+.divSection2 span{
+    color: #61DAFB;
+}
+
+.section2ImgUno{
+    height: calc(var(--section2HeightIcons)*1.4);
+}
+.section2ImgDos{
+    height: calc(var(--section2HeightIcons)*1.6);
+}
+.section2ImgTres{
+    height: var(--section2HeightIcons);
+}
+
+.divSection2 p{
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.centradoSection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cuadroUnoSection2{
+    border: 0.15rem solid #61DAFB;
+    border-radius: 1rem;
+    height: 17rem;
+    width: 15rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.cuadroDosSection2{
+    border: 0.15rem solid #D76627;
+    border-radius: 1rem;
+    height: 22rem;
+    width: 20rem;
+    padding: 0 1rem 0 1rem;
+}
+
+/* cominza section 3*/
