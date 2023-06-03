@@ -29,8 +29,8 @@ nav a {
     margin-left: 0.5rem;
 }
 
-:root{
-    --heroLenguajesHeight:3rem;
+:root {
+    --heroLenguajesHeight: 3rem;
     --heroLenguajesPadding: 0.5rem;
     --heroLenguajesTop: 22%;
     --heroLenguajesRight: 8%;
@@ -51,12 +51,38 @@ nav a:hover {
     box-shadow: 0.1rem 0.1rem 0.8rem #D76627;
 }
 
-.headerDivEmail p:hover {
+.headerDivEmail:hover p {
     color: #61DAFB;
 }
 
 .burbuja:hover {
     box-shadow: inset 0 -0.2rem 0.9rem #0772BB;
+}
+
+.heroDivDerecha button:hover{
+    background-color: #ffffffab;
+    color: #D76627;
+    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff4d;
+}
+
+.heroDivDerecha button:hover i{
+    color: #D76627;
+}
+
+.cuadroUnoSection2:hover {
+    box-shadow: 0 0 1rem #61DAFB;
+}
+
+.cuadroUnoSection2:hover span {
+    text-shadow: 0 0 0.5rem #61DAFB;
+}
+
+.cuadroDosSection2:hover {
+    box-shadow: 0 0 1rem #D76627;
+}
+
+.cuadroDosSection2:hover span {
+    text-shadow: 0 0 0.5rem #61DAFB;
 }
 
 .row {
@@ -113,10 +139,10 @@ nav a:hover {
 }
 
 .headerDivEmail {
-    border: 0.1rem solid #D76627;
+    border: 0.1rem solid #d76527dc;
     border-radius: 0.3rem;
     margin-left: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 0.1rem 1.5rem;
     background-color: #111320;
 }
 
@@ -124,8 +150,9 @@ nav a:hover {
     color: #fff;
 }
 
-.headerDivEmail a {
+.headerDivEmail button {
     color: #61DAFB;
+    background-color: transparent;
 }
 
 .linkEmail {
@@ -136,7 +163,7 @@ nav a:hover {
     background: linear-gradient(20deg, #00C9FF, #00C9FF, #00C9FF, #00546b, #00546b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .burbuja {
@@ -146,9 +173,14 @@ nav a:hover {
     padding: 0.7rem;
 }
 
+nav a,
 .burbuja,
 .headerDivEmail,
-nav a {
+.headerDivEmail p,
+.cuadroUnoSection2,
+.cuadroDosSection2,
+.heroDivDerecha button,
+.heroDivDerecha button i {
     transition: all 0.3s ease-in-out;
 }
 
@@ -268,26 +300,26 @@ nav a {
     height: var(--heroLenguajesHeight);
 }
 
-.heroNodeJs{
+.heroNodeJs {
     top: var(--heroLenguajesTop);
     right: var(--heroLenguajesRight);
 }
 
-.heroJS{
+.heroJS {
     top: calc(var(--heroLenguajesTop)*2);
     right: calc(var(--heroLenguajesRight)*-0.5);
     padding: calc(var(--heroLenguajesPadding)*1.5);
     height: calc(var(--heroLenguajesHeight)*1.5);
 }
 
-.heroReact{
+.heroReact {
     padding: calc(var(--heroLenguajesPadding)*3);
-    height: calc(var(--heroLenguajesHeight)*2);   
+    height: calc(var(--heroLenguajesHeight)*2);
 }
 
 /* comienza section 2 */
 
-.section2{
+.section2 {
     background-color: #111320;
     height: 100vh;
     width: 85vw;
@@ -298,70 +330,86 @@ nav a {
     justify-content: space-evenly;
 }
 
-.section2 h2{
+.section2 h2,
+.section3 h2 {
     color: #61DAFB;
     font-weight: 48;
     font-size: 2rem;
 }
 
-.section2 h2 span{
+.section2 h2 span,
+.section3 h2 span {
     color: #FFF;
+    font-size: 2.3rem;
 }
 
-.divSection2{
+.divSection2 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.divSection2 h3{
+.divSection2 h3 {
     color: #D76627;
     font-size: 1.6rem;
 }
 
-.divSection2 span{
+.divSection2 span {
     color: #61DAFB;
 }
 
-.section2ImgUno{
+.section2ImgUno {
     height: calc(var(--section2HeightIcons)*1.4);
 }
-.section2ImgDos{
+
+.section2ImgDos {
     height: calc(var(--section2HeightIcons)*1.6);
 }
-.section2ImgTres{
+
+.section2ImgTres {
     height: var(--section2HeightIcons);
 }
 
-.divSection2 p{
+.divSection2 p {
     color: #fff;
     font-size: 1.3rem;
     text-align: center;
     line-height: 2rem;
 }
 
-.centradoSection2{
+.centradoSection2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.cuadroUnoSection2{
+.cuadroUnoSection2 {
     border: 0.15rem solid #61DAFB;
     border-radius: 1rem;
     height: 17rem;
-    width: 15rem;
+    width: 16rem;
     padding: 0 1rem 0 1rem;
 }
 
-.cuadroDosSection2{
+.cuadroDosSection2 {
     border: 0.15rem solid #D76627;
     border-radius: 1rem;
     height: 22rem;
-    width: 20rem;
+    width: 21rem;
     padding: 0 1rem 0 1rem;
 }
 
 /* cominza section 3*/
+
+.section3{
+    height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
