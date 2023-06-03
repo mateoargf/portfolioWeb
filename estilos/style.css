@@ -33,7 +33,7 @@ nav a {
     --heroLenguajesHeight: 3rem;
     --heroLenguajesPadding: 0.5rem;
     --heroLenguajesTop: 22%;
-    --heroLenguajesRight: 8%;
+    --heroLenguajesRight: 10%;
 
     --section2HeightIcons: 4.5rem;
 }
@@ -59,13 +59,13 @@ nav a:hover {
     box-shadow: inset 0 -0.2rem 0.9rem #0772BB;
 }
 
-.heroDivDerecha button:hover{
+.heroDivDerecha button:hover {
     background-color: #ffffffab;
     color: #D76627;
-    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff4d;
+    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
 }
 
-.heroDivDerecha button:hover i{
+.heroDivDerecha button:hover i {
     color: #D76627;
 }
 
@@ -238,17 +238,18 @@ nav a,
 }
 
 .heroDivDerecha button {
-    padding: 0.6rem 0;
+    padding: 0.65rem 0;
     width: 6rem;
     background-color: #D76627;
     color: #fff;
     border: 0.12rem solid #fff;
     outline: none;
     box-shadow: none;
-    border-radius: 0.3rem;
+    border-radius: 0.25rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 0.8rem;
 }
 
 .heroDivDerecha i {
@@ -286,8 +287,9 @@ nav a,
     box-shadow: 0 -1.5rem 8rem #d765276c;
     position: absolute;
     z-index: -10;
-    left: 8%;
+    left: 50%;
     top: 15%;
+    transform: translateX(-50%);
 }
 
 .heroNodeJs,
@@ -307,7 +309,7 @@ nav a,
 
 .heroJS {
     top: calc(var(--heroLenguajesTop)*2);
-    right: calc(var(--heroLenguajesRight)*-0.5);
+    right: calc(var(--heroLenguajesRight)*0);
     padding: calc(var(--heroLenguajesPadding)*1.5);
     height: calc(var(--heroLenguajesHeight)*1.5);
 }
@@ -332,7 +334,7 @@ nav a,
 }
 
 .section2 h2,
-.section3 h2{
+.section3 h2 {
     margin-top: 5rem;
 }
 
@@ -411,7 +413,7 @@ nav a,
 
 /* cominza section 3*/
 
-.section3{
+.section3 {
     min-height: 90vh;
     width: 85vw;
     margin: 0 auto;
@@ -421,18 +423,18 @@ nav a,
     justify-content: space-evenly;
 }
 
-.section3 h2{
+.section3 h2 {
     margin-bottom: 5rem;
 }
 
-.containerFlexSection3{
+.containerFlexSection3 {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     gap: 0.5rem;
 }
 
-.containerGridSection3{
+.containerGridSection3 {
     min-height: 60%;
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -440,7 +442,7 @@ nav a,
     grid-gap: 4.3rem 2rem;
 }
 
-.cuadradosSection3{
+.cuadradosSection3 {
     height: 6rem;
     background-color: #1E2235;
     border-radius: 0.5rem;
@@ -451,37 +453,66 @@ nav a,
 
 /* comienza el section 4 */
 
-.section4{
+.section4 {
     min-height: 100vh;
     width: 85vw;
     margin: 0 auto;
 }
 
-.section4 h2{
+.section4 h2 {
     text-align: center;
     margin-top: 7rem;
     margin-bottom: 5rem;
 }
 
-.timeLine{
+.timeLine {
     display: grid;
     grid-template-columns: 1fr 0.2rem 1fr;
 }
 
-.timeLineComponent{
+.timeLineComponent {
     margin-top: 2rem;
+    line-height: 1.5rem;
 }
 
-.ComponentRight{
-    
+.anio {
+    background-color: #F17128;
+    display: inline-block;
+    color: #fff;
+    font-weight: 80;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
 }
 
-.timeLineMiddle{
+.tiuloCelesteSection4 {
+    color: #61DAFB;
+    font-size: 1.5rem;
+    font-weight: 38;
+}
+
+.tituloBlancoSection4 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 38;
+}
+
+.blancoResponabilidades {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 15;
+}
+
+.timeLineComponent ul{
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.timeLineMiddle {
     position: relative;
     background-color: #F17128;
 }
 
-.timeLinePoint{
+.timeLinePoint {
     margin-top: 2rem;
     height: 1.5rem;
     width: 1.5rem;
