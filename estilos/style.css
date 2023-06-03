@@ -468,20 +468,42 @@ nav a,
 .timeLine {
     display: grid;
     grid-template-columns: 1fr 0.2rem 1fr;
+    min-height: 100vh;
+    grid-gap: 0 7rem;
 }
 
 .timeLineComponent {
+    height: 20rem;
     margin-top: 2rem;
     line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.componentLeft{
+    margin-left: 5rem;
+}
+
+.anioContainerRight{
+    width: 100%;
+    display: flex;
+}
+
+.anioContainerLeft{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .anio {
+    width: 3rem;
     background-color: #F17128;
-    display: inline-block;
     color: #fff;
     font-weight: 80;
     font-size: 1rem;
     padding: 0.1rem 0.5rem;
+    text-align: center;
 }
 
 .tiuloCelesteSection4 {
