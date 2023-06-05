@@ -962,6 +962,8 @@ footer section h1 span {
 
     header {
         justify-content: space-between;
+        width: 90vw;
+        margin: 0 auto;
     }
 
     .ocultarPhone {
@@ -980,7 +982,8 @@ footer section h1 span {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: 90vw;
+        margin: 0 auto;
     }
 
     .heroDivDerecha button {
