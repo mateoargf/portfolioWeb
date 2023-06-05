@@ -311,6 +311,7 @@ nav a,
     position: relative;
     z-index: -5;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .circuloHero {
@@ -996,7 +997,7 @@ footer section h1 span {
     }
 
     .programador {
-        height: 85%;
+        height: 50vh;
         width: 85%;
     }
 
