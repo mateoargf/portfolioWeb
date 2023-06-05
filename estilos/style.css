@@ -14,12 +14,14 @@ body {
 
 header {
     padding-top: 2rem;
+    background-color: rgba(17, 19, 32, 0.9);
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 10;
     width: 85vw;
     margin: 0 auto;
+    animation: invisible 2s linear;
 }
 
 nav a {
@@ -60,7 +62,7 @@ nav a:hover {
     box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
 }
 
-.burbujaFooterWapp:hover{    
+.burbujaFooterWapp:hover {
     box-shadow: inset 0 -0.3rem 0.8rem #0EA991;
 }
 
@@ -76,16 +78,9 @@ nav a:hover {
     color: #D76627;
 }
 
-.cuadroUnoSection2:hover {
-    box-shadow: 0 0 1rem #61DAFB;
-}
 
 .cuadroUnoSection2:hover span {
     text-shadow: 0 0 0.5rem #61DAFB;
-}
-
-.cuadroDosSection2:hover {
-    box-shadow: 0 0 1rem #D76627;
 }
 
 .cuadroDosSection2:hover span {
@@ -98,11 +93,11 @@ nav a:hover {
 }
 
 .bordeTodo:focus,
-.bordeTodo:hover{
+.bordeTodo:hover {
     box-shadow: 0 0 0.8rem #00c8ffbd;
 }
 
-.divBack:hover a{
+.divBack:hover a {
     text-shadow: 0 -4rem 0 #D76627;
 }
 
@@ -202,10 +197,10 @@ nav a,
 .burbuja,
 .headerDivEmail,
 .headerDivEmail p,
-.cuadroUnoSection2,
-.cuadroDosSection2,
 .heroDivDerecha button,
 .heroDivDerecha button i,
+.cuadroUnoSection2 span,
+.cuadroDosSection2 span,
 .divBtnFormulario button,
 .bordeBottom,
 .bordeTodo,
@@ -232,6 +227,7 @@ nav a,
 .heroMiNombre {
     align-self: flex-end;
     margin-bottom: 17vh;
+    animation: invisible 2s linear;
 }
 
 .heroMiNombre h2 {
@@ -303,6 +299,7 @@ nav a,
     justify-content: flex-end;
     align-items: end;
     position: relative;
+    animation: invisible 2s linear;
 }
 
 .programador {
@@ -317,11 +314,11 @@ nav a,
     background-color: #111320;
     border: 2rem solid #D76627;
     border-radius: 50%;
-    box-shadow: 0 -1.5rem 10rem #d765276c;
     position: absolute;
     z-index: -10;
     left: 50%;
     transform: translateX(-50%);
+    animation: border-flicker 3s linear infinite;
 }
 
 .heroNodeJs,
@@ -433,6 +430,7 @@ nav a,
     height: 17rem;
     width: 18rem;
     padding: 0 1rem 0 1rem;
+    animation: cuadroCeleste 3s linear infinite;
 }
 
 .cuadroDosSection2 {
@@ -441,6 +439,7 @@ nav a,
     height: 22rem;
     width: 21rem;
     padding: 0 1rem 0 1rem;
+    animation: cuadroNaranja 3s linear infinite;
 }
 
 /* cominza section 3*/
@@ -511,32 +510,32 @@ nav a,
     flex-direction: column;
 }
 
-.componentLeft{
+.componentLeft {
     margin-left: 5rem;
 }
 
-.anioContainerRight{
+.anioContainerRight {
     width: 100%;
     display: flex;
 }
 
-.anioContainerLeft{
+.anioContainerLeft {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.anioUno{
+.anioUno {
     clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 
-.anioDos{
+.anioDos {
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 15% 100%, 0 50%, 15% 0);
 }
 
 .anioContainerRight,
 .section4H3,
-.letraMaquinaEscribir{
+.letraMaquinaEscribir {
     margin-bottom: 1rem;
 }
 
@@ -572,11 +571,11 @@ nav a,
     letter-spacing: 0.1rem;
 }
 
-.letraMaquinaEscribir{
+.letraMaquinaEscribir {
     font-family: 'Pridi', serif;
 }
 
-.timeLineComponent ul{
+.timeLineComponent ul {
     margin-left: 1rem;
     color: #E4E4E6;
     font-size: 1.2rem;
@@ -603,7 +602,7 @@ nav a,
 
 /* comienza el footer */
 
-footer{
+footer {
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -611,7 +610,7 @@ footer{
     overflow: hidden;
 }
 
-footer section{
+footer section {
     min-height: 80vh;
     width: 85vw;
     margin: 0 auto;
@@ -621,16 +620,16 @@ footer section{
     justify-content: space-evenly;
 }
 
-footer section h1{
+footer section h1 {
     color: #D76627;
     font-size: 3.3rem;
 }
 
-footer section h1 span{
+footer section h1 span {
     color: #fff;
 }
 
-.formulario{
+.formulario {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -639,7 +638,7 @@ footer section h1 span{
 }
 
 .bordeBottom,
-.bordeTodo{
+.bordeTodo {
     background-color: #111320;
     color: #A7A8AD;
     border: none;
@@ -653,26 +652,26 @@ footer section h1 span{
 }
 
 
-.bordeBottom{
+.bordeBottom {
     border-bottom: 0.15rem solid transparent;
     background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6, #00c8ffbd, #00c8ffb6) border-box;
 }
 
-.bordeTodo{
+.bordeTodo {
     padding-top: 1rem;
     padding-bottom: 20vh;
     border: 0.15rem solid transparent;
     border-radius: 0.2rem;
-    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6,#00c8ffbd, #00c8ffb6) border-box;
+    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6, #00c8ffbd, #00c8ffb6) border-box;
 }
 
-.divBtnFormulario{
+.divBtnFormulario {
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.divBtnFormulario button{
+.divBtnFormulario button {
     height: 2.5rem;
     width: 7rem;
     background-color: #D76627;
@@ -688,35 +687,35 @@ footer section h1 span{
     letter-spacing: 0.01rem;
 }
 
-.orUno{
+.orUno {
     color: #fff;
     font-size: 2.3rem;
     font-weight: 48;
     margin-top: 3rem;
 }
 
-.orDos{
+.orDos {
     color: #D76627;
     font-size: 2.4rem;
     font-weight: 48;
 }
 
 .orUno,
-.orDos{
+.orDos {
     margin-bottom: 1rem;
 }
 
-.orDos span{
+.orDos span {
     color: #fff;
 }
 
-.divBurbujasFooter{
+.divBurbujasFooter {
     width: 19%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.burbujaFooterWapp{
+.burbujaFooterWapp {
     border: 0.12rem solid rgba(14, 169, 145, 0.2);
     border-radius: 50%;
     box-shadow: inset 0 -0.3rem 0.8rem rgba(14, 169, 145, 0.3);
@@ -725,7 +724,7 @@ footer section h1 span{
     font-size: 1.9rem;
 }
 
-.burbujaFooter{
+.burbujaFooter {
     border: 0.12rem solid rgba(97, 218, 251, 0.2);
     border-radius: 50%;
     box-shadow: inset 0 -0.3rem 0.8rem rgba(97, 218, 251, 0.3);
@@ -734,7 +733,7 @@ footer section h1 span{
     font-size: 1.9rem;
 }
 
-.divBack{
+.divBack {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -742,23 +741,23 @@ footer section h1 span{
     margin-bottom: 1rem;
 }
 
-.subDivBack{
+.subDivBack {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.divBack img{
+.divBack img {
     height: 2rem;
 }
 
-.divBack a{
+.divBack a {
     color: #D76627;
     text-decoration: none;
     border-bottom: 0.1rem solid #D76627;
 }
 
-.circuloFooterUno{
+.circuloFooterUno {
     position: absolute;
     height: 50rem;
     width: 50rem;
@@ -768,7 +767,7 @@ footer section h1 span{
     left: -35%;
 }
 
-.circuloFooterDos{
+.circuloFooterDos {
     position: absolute;
     height: 50rem;
     width: 50rem;
@@ -778,3 +777,175 @@ footer section h1 span{
     left: 72%;
     top: 40%;
 }
+
+/* comienza animaciones */
+
+@keyframes invisible {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes border-flicker {
+    0% {
+        opacity: 0.1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        box-shadow: 0 -1.5rem 10rem #d865286c;
+    }
+
+    2% {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        box-shadow: 0 -1.5rem 10rem #d865286c;
+    }
+
+    4% {
+        opacity: 0.1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        box-shadow: 0 -1.5rem 10rem #d865286c;
+    }
+
+    8% {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        box-shadow: 0 -1.5rem 10rem #d865286c;
+    }
+
+    70% {
+        opacity: 0.7;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        box-shadow: 0 -1.5rem 10rem #d865286c;
+    }
+
+    100% {
+        opacity: 0.9;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        box-shadow: 0 -1.5rem 10rem #d865286c;
+    }
+}
+
+
+@keyframes cuadroCeleste{
+    0% {
+        opacity: 0.1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        box-shadow: 0 0 1rem #61DAFB;
+    }
+
+    2% {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(	97, 218, 251, 0.5);
+        box-shadow: 0 0 1rem #61DAFB;
+    }
+
+    4% {
+        opacity: 0.1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        box-shadow: 0 0 1rem #61DAFB;
+    }
+
+    8% {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        box-shadow: 0 0 1rem #61DAFB;
+    }
+
+    70% {
+        opacity: 0.7;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        box-shadow: 0 0 1rem #61DAFB;
+    }
+
+    100% {
+        opacity: 0.9;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
+        box-shadow: 0 0 1rem #61DAFB;
+    }
+}
+
+@keyframes cuadroNaranja {
+    0% {
+        opacity: 0.1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        box-shadow: 0 0 1rem #D76627;
+    }
+
+    2% {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        box-shadow: 0 0 1rem #D76627;
+    }
+
+    4% {
+        opacity: 0.1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        box-shadow: 0 0 1rem #D76627;
+    }
+
+    8% {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        box-shadow: 0 0 1rem #D76627;
+    }
+
+    70% {
+        opacity: 0.7;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        box-shadow: 0 0 1rem #D76627;
+    }
+
+    100% {
+        opacity: 0.9;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
+        box-shadow: 0 0 1rem #D76627;
+    }    
+}
+
+
+/* comienza media */
