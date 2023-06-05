@@ -957,9 +957,10 @@ footer section h1 span {
 /* comienza media */
 
 @media screen and (max-width:767px) {
-    body{
+    body {
         width: 100vw;
     }
+
     /* header */
 
     header {
@@ -984,11 +985,11 @@ footer section h1 span {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 90vw;
+        width: 85vw;
         margin: 0 auto;
     }
 
-    .heroMiNombre{
+    .heroMiNombre {
         width: 90%;
         margin: 0 auto;
     }
@@ -1007,19 +1008,36 @@ footer section h1 span {
         width: 90%;
     }
 
+    .heroNodeJs,
+    .heroJS,
+    .heroReact {
+        position: absolute;
+        background-color: #1E2235;
+        border-radius: 50%;
+        padding: calc(var(--heroLenguajesPadding)*0.7);
+        height: calc(var(--heroLenguajesHeight)*0.7);
+    }
+
     .heroNodeJs {
         top: calc(var(--heroLenguajesTop)/1.3);
-        right: calc(var(--heroLenguajesRight)*0.9);
+        right: calc(var(--heroLenguajesRight)*0.7);
     }
 
     .heroJS {
         top: calc(var(--heroLenguajesTop)*1.8);
-        right: calc(var(--heroLenguajesRight)*-0.3);
+        right: calc(var(--heroLenguajesRight)*-0.9);
+        padding: calc(var(--heroLenguajesPadding)*1);
+        height: calc(var(--heroLenguajesHeight)*1);
     }
 
-    .circuloHero{
-        
-    height: 70%;
-    width: 70%;
+    .heroReact {
+        padding: calc(var(--heroLenguajesPadding)*1.5);
+        height: calc(var(--heroLenguajesHeight)*1.5);
+    }
+
+    .circuloHero {
+        height: 80%;
+        width: 90%;
+        border-width: 1.2rem;
     }
 }
