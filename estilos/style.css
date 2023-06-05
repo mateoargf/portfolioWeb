@@ -968,4 +968,16 @@ footer section h1 span {
         font-size: 2.5rem;
         color: #fff;
     }
+
+    .divHero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroDivDerecha button{
+        align-self: center;
+        font-size: 150%;
+        height: 8vh;
+        width: 50%;
+    }
 }
