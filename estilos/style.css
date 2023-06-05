@@ -318,7 +318,7 @@ nav a,
     z-index: -10;
     left: 50%;
     transform: translateX(-50%);
-    animation: border-flicker 3s linear infinite;
+    animation: border-flicker 2.5s linear infinite;
 }
 
 .heroNodeJs,
@@ -430,7 +430,7 @@ nav a,
     height: 17rem;
     width: 18rem;
     padding: 0 1rem 0 1rem;
-    animation: cuadroCeleste 3s linear infinite;
+    animation: cuadroCeleste 2.5s linear infinite;
 }
 
 .cuadroDosSection2 {
@@ -439,7 +439,7 @@ nav a,
     height: 22rem;
     width: 21rem;
     padding: 0 1rem 0 1rem;
-    animation: cuadroNaranja 3s linear infinite;
+    animation: cuadroNaranja 2.5s linear infinite;
 }
 
 /* cominza section 3*/
@@ -851,7 +851,7 @@ footer section h1 span {
     }
 
     100% {
-        opacity: 0.9;
+        opacity: 1;
         -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
         -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
         box-shadow: 0 -1.5rem 10rem #d865286c;
@@ -896,7 +896,7 @@ footer section h1 span {
     }
 
     100% {
-        opacity: 0.9;
+        opacity: 0.99;
         -webkit-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
         -moz-box-shadow: 0 0 2rem 0.4rem rgba(97, 218, 251, 0.5);
         box-shadow: 0 0 1rem #61DAFB;
@@ -940,7 +940,7 @@ footer section h1 span {
     }
 
     100% {
-        opacity: 0.9;
+        opacity: 0.99;
         -webkit-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
         -moz-box-shadow: 0 0 2rem 0.4rem rgba(215, 102, 39, 0.5);
         box-shadow: 0 0 1rem #D76627;
@@ -949,3 +949,13 @@ footer section h1 span {
 
 
 /* comienza media */
+
+@media screen and (max-width:767px) {
+    header{
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: none;
+    }
+}
