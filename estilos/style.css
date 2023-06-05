@@ -30,8 +30,8 @@ nav a {
 }
 
 :root {
-    --heroLenguajesHeight: 3rem;
-    --heroLenguajesPadding: 0.5rem;
+    --heroLenguajesHeight: 2.5rem;
+    --heroLenguajesPadding: 0.7rem;
     --heroLenguajesTop: 22%;
     --heroLenguajesRight: 10%;
 
@@ -59,13 +59,15 @@ nav a:hover {
     box-shadow: inset 0 -0.2rem 0.9rem #0772BB;
 }
 
-.heroDivDerecha button:hover {
+.heroDivDerecha button:hover,
+.divBtnFormulario button:hover {
     background-color: #ffffffab;
     color: #D76627;
     box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
 }
 
-.heroDivDerecha button:hover i {
+.heroDivDerecha button:hover i,
+.divBtnFormulario button:hover {
     color: #D76627;
 }
 
@@ -180,7 +182,8 @@ nav a,
 .cuadroUnoSection2,
 .cuadroDosSection2,
 .heroDivDerecha button,
-.heroDivDerecha button i {
+.heroDivDerecha button i,
+.divBtnFormulario button {
     transition: all 0.3s ease-in-out;
 }
 
@@ -238,7 +241,7 @@ nav a,
 }
 
 .heroDivDerecha button {
-    padding: 0.65rem 0;
+    height: 2.3rem;
     width: 6rem;
     background-color: #D76627;
     color: #fff;
@@ -249,7 +252,9 @@ nav a,
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: nowrap;
     font-size: 0.8rem;
+    font-family: 'Pridi', serif;
 }
 
 .heroDivDerecha i {
@@ -280,15 +285,14 @@ nav a,
 
 .circuloHero {
     height: 80%;
-    width: 80%;
+    width: 78%;
     background-color: #111320;
     border: 2rem solid #D76627;
     border-radius: 50%;
-    box-shadow: 0 -1.5rem 8rem #d765276c;
+    box-shadow: 0 -1.5rem 10rem #d765276c;
     position: absolute;
     z-index: -10;
     left: 50%;
-    top: 15%;
     transform: translateX(-50%);
 }
 
@@ -304,7 +308,7 @@ nav a,
 
 .heroNodeJs {
     top: var(--heroLenguajesTop);
-    right: var(--heroLenguajesRight);
+    right: calc(var(--heroLenguajesRight)*0.7);
 }
 
 .heroJS {
@@ -343,7 +347,7 @@ nav a,
 .section4 h2 {
     color: #61DAFB;
     font-weight: 48;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
 }
 
 .section2 h2 span,
@@ -362,7 +366,7 @@ nav a,
 
 .divSection2 h3 {
     color: #D76627;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .divSection2 span {
@@ -399,7 +403,7 @@ nav a,
     border: 0.15rem solid #61DAFB;
     border-radius: 1rem;
     height: 17rem;
-    width: 16rem;
+    width: 18rem;
     padding: 0 1rem 0 1rem;
 }
 
@@ -475,10 +479,8 @@ nav a,
 .timeLineComponent {
     height: 20rem;
     margin-top: 2rem;
-    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .componentLeft{
@@ -494,6 +496,12 @@ nav a,
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+.anioContainerRight,
+.section4H3,
+.letraMaquinaEscribir{
+    margin-bottom: 1rem;
 }
 
 .anio {
@@ -519,14 +527,22 @@ nav a,
 }
 
 .blancoResponabilidades {
-    color: #fff;
-    font-size: 1rem;
+    color: #A7A8AD;
+    font-size: 1.2rem;
     font-weight: 15;
+    letter-spacing: 0.1rem;
+}
+
+.letraMaquinaEscribir{
+    font-family: 'Pridi', serif;
 }
 
 .timeLineComponent ul{
     margin-left: 1rem;
-    color: #fff;
+    color: #E4E4E6;
+    font-size: 1.2rem;
+    font-weight: 15;
+    letter-spacing: 0.1rem;
 }
 
 .timeLineMiddle {
@@ -544,4 +560,81 @@ nav a,
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* comienza el footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    margin-top: 2rem;
+}
+
+footer h1{
+    color: #D76627;
+    font-size: 3.3rem;
+}
+
+footer h1 span{
+    color: #fff;
+}
+
+.formulario{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bordeBottom,
+.bordeTodo{
+    background-color: #111320;
+    color: #A7A8AD;
+    border: none;
+    font-family: 'Pridi', serif;
+    font-size: 1.2rem;
+    font-weight: 15;
+    letter-spacing: 0.1rem;
+    width: 30vw;
+    padding: 0.5rem 0.5rem 0.3rem 0.6rem;
+    outline: none;
+}
+
+
+.bordeBottom{
+    border-bottom: 0.15rem solid transparent;
+    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6, #00c8ffbd, #00c8ffb6) border-box;
+}
+
+.bordeTodo{
+    padding-bottom: 20vh;
+    border: 0.15rem solid transparent;
+    border-radius: 0.2rem;
+    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6,#00c8ffbd, #00c8ffb6) border-box;
+}
+
+.divBtnFormulario{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.divBtnFormulario button{
+    height: 2.5rem;
+    width: 7rem;
+    background-color: #D76627;
+    color: #fff;
+    border: 0.12rem solid #fff;
+    outline: none;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: 'Pridi', serif;
+    letter-spacing: 0.01rem;
 }
