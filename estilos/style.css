@@ -988,6 +988,12 @@ footer section h1 span {
         margin: 0 auto;
     }
 
+    .heroMiNombre{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
     .heroDivDerecha button {
         align-self: center;
         font-size: 150%;
@@ -998,7 +1004,7 @@ footer section h1 span {
 
     .programador {
         height: 50vh;
-        width: 85%;
+        width: 90%;
     }
 
     .heroNodeJs {
