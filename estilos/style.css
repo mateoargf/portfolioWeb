@@ -312,7 +312,6 @@ nav a,
     position: relative;
     z-index: -5;
     margin: 0 auto;
-    object-fit: cover;
 }
 
 .circuloHero {
