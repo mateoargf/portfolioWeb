@@ -92,6 +92,16 @@ nav a:hover {
     text-shadow: 0 0 0.5rem #61DAFB;
 }
 
+.bordeBottom:focus,
+.bordeBottom:hover {
+    box-shadow: 0 0.8rem 0.8rem -0.8rem #00c8ffbd;
+}
+
+.bordeTodo:focus,
+.bordeTodo:hover{
+    box-shadow: 0 0 0.8rem #00c8ffbd;
+}
+
 .divBack:hover a{
     text-shadow: 0 -4rem 0 #D76627;
 }
@@ -193,6 +203,8 @@ nav a,
 .heroDivDerecha button,
 .heroDivDerecha button i,
 .divBtnFormulario button,
+.bordeBottom,
+.bordeTodo,
 .burbujaFooterWapp,
 .burbujaFooter,
 .divBack a {
@@ -588,22 +600,29 @@ nav a,
 /* comienza el footer */
 
 footer{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+footer section{
+    min-height: 80vh;
+    width: 85vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 100vh;
-    width: 85vw;
-    margin: 0 auto;
-    margin-top: 2rem;
 }
 
-footer h1{
+footer section h1{
     color: #D76627;
     font-size: 3.3rem;
 }
 
-footer h1 span{
+footer section h1 span{
     color: #fff;
 }
 
@@ -636,6 +655,7 @@ footer h1 span{
 }
 
 .bordeTodo{
+    padding-top: 1rem;
     padding-bottom: 20vh;
     border: 0.15rem solid transparent;
     border-radius: 0.2rem;
@@ -687,7 +707,7 @@ footer h1 span{
 }
 
 .divBurbujasFooter{
-    width: 20%;
+    width: 19%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -698,7 +718,7 @@ footer h1 span{
     box-shadow: inset 0 -0.3rem 0.8rem rgba(14, 169, 145, 0.3);
     padding: 0.9rem;
     color: #1BCD6B;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 .burbujaFooter{
@@ -707,7 +727,7 @@ footer h1 span{
     box-shadow: inset 0 -0.3rem 0.8rem rgba(97, 218, 251, 0.3);
     padding: 0.9rem;
     color: #61DAFC;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 .divBack{
@@ -732,4 +752,25 @@ footer h1 span{
     color: #D76627;
     text-decoration: none;
     border-bottom: 0.1rem solid #D76627;
+}
+
+.circuloFooterUno{
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    border: 2rem solid #1E2235;
+    border-radius: 50%;
+    z-index: -10;
+    left: -35%;
+}
+
+.circuloFooterDos{
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    border: 2rem solid #1E2235;
+    border-radius: 50%;
+    z-index: -10;
+    left: 72%;
+    top: 40%;
 }
