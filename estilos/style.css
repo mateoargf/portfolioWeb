@@ -310,6 +310,7 @@ nav a,
     height: 85vh;
     position: relative;
     z-index: -5;
+    margin: 0 auto;
 }
 
 .circuloHero {
@@ -995,8 +996,8 @@ footer section h1 span {
     }
 
     .programador {
-        height: 100%;
-        width: 100%;
+        height: 85%;
+        width: 85%;
     }
 
     .heroNodeJs {
@@ -1007,5 +1008,11 @@ footer section h1 span {
     .heroJS {
         top: calc(var(--heroLenguajesTop)*1.8);
         right: calc(var(--heroLenguajesRight)*-0.3);
+    }
+
+    .circuloHero{
+        
+    height: 70%;
+    width: 70%;
     }
 }
