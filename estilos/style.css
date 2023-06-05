@@ -210,6 +210,10 @@ nav a,
     transition: all 0.3s ease-in-out;
 }
 
+.menuIcon{
+    display: none;
+}
+
 /* comienza el hero */
 
 .hero {
@@ -950,12 +954,18 @@ footer section h1 span {
 
 /* comienza media */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px){
     header{
         justify-content: space-between;
     }
 
-    header nav{
+    .ocultarPhone{
         display: none;
+    }
+    
+    .menuIcon{
+        display: flex;
+        font-size: 2rem;
+        color: #fff;
     }
 }
