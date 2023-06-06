@@ -304,7 +304,7 @@ nav a,
     align-items: end;
     position: relative;
     animation: invisible 2s linear;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .programador {
@@ -366,6 +366,11 @@ nav a,
     align-items: center;
     justify-content: space-evenly;
     gap: 4rem;
+}
+
+.flecha1Section2,
+.flecha2Section2 {
+    display: none;
 }
 
 .section2 h2,
@@ -823,44 +828,44 @@ footer section h1 span {
 @keyframes border-flicker {
     0% {
         opacity: 0.1;
-        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
         box-shadow: 0 -1.5rem 10rem #d865286c;
     }
 
     2% {
         opacity: 1;
-        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
         box-shadow: 0 -1.5rem 10rem #d865286c;
     }
 
     4% {
         opacity: 0.1;
-        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        box-shadow: 0 -1.5rem 10rem #d865286c;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        box-shadow: 0 -1.5rem 10rem #d66427e6;
     }
 
     8% {
         opacity: 1;
-        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        box-shadow: 0 -1.5rem 10rem #d865286c;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        box-shadow: 0 -1.5rem 10rem #d66427e6;
     }
 
     70% {
         opacity: 0.7;
-        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        box-shadow: 0 -1.5rem 10rem #d865286c;
+        -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+        box-shadow: 0 -1.5rem 10rem #d66427e6;
     }
 
     100% {
         opacity: 1;
         -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
         -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-        box-shadow: 0 -1.5rem 10rem #d865286c;
+        box-shadow: 0 -1.5rem 10rem #d66427e6;
     }
 }
 
@@ -1002,7 +1007,7 @@ footer section h1 span {
         width: 50%;
     }
 
-    .divHeroProgramador{
+    .divHeroProgramador {
         margin: 0 1.5rem 0 1.5rem;
     }
 
@@ -1028,7 +1033,7 @@ footer section h1 span {
 
     .heroJS {
         top: calc(var(--heroLenguajesTop)*1.8);
-        right: calc(var(--heroLenguajesRight)*-0.9);
+        right: calc(var(--heroLenguajesRight)*-1.1);
         padding: calc(var(--heroLenguajesPadding)*0.9);
         height: calc(var(--heroLenguajesHeight)*0.9);
     }
@@ -1043,5 +1048,64 @@ footer section h1 span {
         height: 80%;
         width: 100%;
         border-width: 1.2rem;
+    }
+
+    /* comienza section 2 */
+
+    .section2 {
+        width: 100vw;
+        gap: 0;
+    }
+
+    .section2 h2,
+    .section3 h2 {
+        margin-top: 0;
+    }
+
+
+    .divSection2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .flecha1Section2,
+    .flecha2Section2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .flecha1Section2 img,
+    .flecha2Section2 img {
+        height: 2rem;
+    }
+
+    .flecha2Section2 {
+        transform: rotate(180deg);
+    }
+
+    .cuadroDosSection2 {
+        margin-right: 1rem;
+    }
+
+    .cuadroDosSection2,
+    .cuadroUnoSection2 {
+        width: 13rem;
+        height: 13rem;
+    }
+
+
+    .cuadroDosSection2 h3,
+    .cuadroUnoSection2 h3 {
+        font-size: 1rem;
+    }
+
+    .cuadroDosSection2 p,
+    .cuadroUnoSection2 p {
+        font-size: 0.8rem;
+    }
+
+    .cuadroDosSection2 img,
+    .cuadroUnoSection2 img {
+        height: calc(var(--section2HeightIcons)*0.7);
     }
 }
