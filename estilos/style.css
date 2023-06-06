@@ -14,7 +14,6 @@ body {
 
 header {
     padding-top: 2rem;
-    background-color: rgba(17, 19, 32, 0.9);
     justify-content: space-between;
     position: sticky;
     top: 0;
