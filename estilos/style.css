@@ -1437,6 +1437,13 @@ footer section h1 span {
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
+    .divHeaderIcons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
     /* hero */
 
     .programador {
