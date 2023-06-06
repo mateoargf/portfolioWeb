@@ -1111,26 +1111,24 @@ footer section h1 span {
 
     /* comienza section3 */
 
-
     .containerFlexSection3 {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 85%;
-        gap: 4.3rem;
+        gap: 5rem;
     }
 
     .containerGridSection3 {
-        min-height: 30%;
+        min-height: 50%;
         display: grid;
         grid-template-columns: repeat(3,3fr);
         grid-auto-rows: 0.7rem;
-        grid-gap: 4.3rem 1.5rem;
+        grid-gap: 5rem 2rem;
     }
 
     .cuadradosSection3 {
-        height: 3rem;
-        padding: 0.7rem;
-        box-shadow: 0.4rem 0.4rem 0.2rem #0D0E1A;
+        height: 3.6rem;
+        padding: 0.85rem;
     }
 }
