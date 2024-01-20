@@ -860,12 +860,6 @@ footer section h1 span {
 
     /* header */
 
-    header {
-        justify-content: space-between;
-        width: 85vw;
-        margin: 0 auto;
-    }
-
     .ocultarPhone {
         display: none;
     }
@@ -1145,12 +1139,6 @@ footer section h1 span {
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     /* header */
-
-    header {
-        justify-content: space-between;
-        width: 85vw;
-        margin: 0 auto;
-    }
 
     .ocultarPhone {
         display: none;
@@ -1461,12 +1449,6 @@ footer section h1 span {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     /* header */
-
-    header {
-        width: 85vw;
-        height: 5rem;
-        font-size: 1.3rem;
-    }
 
     header nav {
         font-size: 1.5rem;
