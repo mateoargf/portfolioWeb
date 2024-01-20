@@ -9,6 +9,12 @@ header {
      animation: invisible 2s linear;
 }
 
+.row {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
 @media screen and (max-width:767px) {
 
      header {

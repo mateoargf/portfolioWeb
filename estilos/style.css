@@ -10,6 +10,16 @@ body {
     background-color: #111320;
 }
 
+:root {
+    --heroLenguajesHeight: 2.5rem;
+    --heroLenguajesPadding: 0.7rem;
+    --heroLenguajesTop: 22%;
+    --heroLenguajesRight: 10%;
+
+    --section2HeightIcons: 4.5rem;
+}
+
+
 /* comienza el header */
 
 
@@ -18,15 +28,6 @@ nav a {
     color: #fff;
     padding: 0.2rem 0.8rem;
     margin-left: 0.5rem;
-}
-
-:root {
-    --heroLenguajesHeight: 2.5rem;
-    --heroLenguajesPadding: 0.7rem;
-    --heroLenguajesTop: 22%;
-    --heroLenguajesRight: 10%;
-
-    --section2HeightIcons: 4.5rem;
 }
 
 nav a:focus {
@@ -88,29 +89,6 @@ nav a:hover {
 
 .div a {
     text-shadow: 0 -4rem 0 #D76627;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logo {
-    height: 2rem;
-    width: 2rem;
-    font-family: 'Pridi', serif;
-    padding: 0.2rem;
-    text-align: center;
-    border: 0.15rem solid transparent;
-    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(135deg, #61DAFB, #111320) border-box;
-    border-radius: 5rem;
-}
-
-.logo span {
-    background: linear-gradient(20deg, rgb(215, 102, 39), rgba(215, 102, 39, 0.1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .navABorde {
@@ -1415,7 +1393,7 @@ footer section h1 span {
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
-    .divHeaderIcons{
+    .divHeaderIcons {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1459,14 +1437,6 @@ footer section h1 span {
         width: 70%;
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .logo {
-        height: 2.5rem;
-        width: 2.5rem;
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
 
