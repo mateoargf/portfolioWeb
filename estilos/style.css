@@ -12,16 +12,6 @@ body {
 
 /* comienza el header */
 
-header {
-    padding-top: 2rem;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    width: 85vw;
-    margin: 0 auto;
-    animation: invisible 2s linear;
-}
 
 nav a {
     text-decoration: none;
