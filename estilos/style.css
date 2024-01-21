@@ -57,6 +57,12 @@ body {
 }
 
 
+.heroDivDerecha button:hover {
+    background-color: #ffffffab;
+    color: #D76627;
+    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
+}
+
 .heroDivDerecha {
     display: flex;
     flex-direction: column;
@@ -258,6 +264,20 @@ body {
     height: 22rem;
     width: 21rem;
     padding: 0 1rem 0 1rem;
+}
+
+
+.cuadroUnoSection2 span,
+.cuadroDosSection2 span {
+    transition: all 0.3s ease-in-out;
+}
+
+.cuadroUnoSection2:hover span {
+    text-shadow: 0 0 0.5rem #61DAFB;
+}
+
+.cuadroDosSection2:hover span {
+    text-shadow: 0 0 0.5rem #61DAFB;
 }
 
 /* cominza section 3*/
@@ -505,6 +525,17 @@ footer section h1 span {
     letter-spacing: 0.01rem;
 }
 
+.bordeBottom:focus,
+.bordeBottom:hover {
+    box-shadow: 0 0.8rem 0.8rem -0.8rem #00c8ffbd;
+}
+
+.divBtnFormulario button:hover {
+    background-color: #ffffffab;
+    color: #D76627;
+    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
+}
+
 .orUno {
     color: #fff;
     font-size: 2.3rem;
@@ -531,15 +562,6 @@ footer section h1 span {
     width: 19%;
     display: flex;
     justify-content: space-evenly;
-}
-
-.burbujaFooterWapp {
-    border: 0.12rem solid rgba(14, 169, 145, 0.2);
-    border-radius: 50%;
-    box-shadow: inset 0 -0.3rem 0.8rem rgba(14, 169, 145, 0.3);
-    padding: 0.9rem;
-    color: #1BCD6B;
-    font-size: 1.9rem;
 }
 
 .burbujaFooter {
@@ -596,8 +618,36 @@ footer section h1 span {
     top: 40%;
 }
 
+
+.burbujaFooterWapp {
+    border: 0.12rem solid rgba(14, 169, 145, 0.2);
+    border-radius: 50%;
+    box-shadow: inset 0 -0.3rem 0.8rem rgba(14, 169, 145, 0.3);
+    padding: 0.9rem;
+    color: #1BCD6B;
+    font-size: 1.9rem;
+}
+
+.bordeTodo:focus,
+.bordeTodo:hover {
+    box-shadow: 0 0 0.8rem #00c8ffbd;
+}
+
+.divBtnFormulario button,
+.bordeBottom,
+.burbujaFooterWapp,
+.bordeTodo,
+.burbujaFooter {
+    transition: all 0.3s ease-in-out;
+}
+
 .burbujaFooter:hover {
     box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
+}
+
+
+.burbujaFooterWapp:hover {
+    box-shadow: inset 0 -0.3rem 0.8rem #0EA991;
 }
 
 /* comienza animaciones */
@@ -1469,11 +1519,6 @@ footer section h1 span {
         margin-bottom: 2rem;
     }
 
-    .burbujaFooterWapp {
-        padding: 1.5rem;
-        font-size: 3rem;
-    }
-
     .burbujaFooter {
         padding: 1.5rem;
         font-size: 3rem;
@@ -1498,5 +1543,10 @@ footer section h1 span {
         height: 90rem;
         width: 90rem;
         border-width: 3.3rem;
+    }
+
+    .burbujaFooterWapp {
+        padding: 1.5rem;
+        font-size: 3rem;
     }
 }

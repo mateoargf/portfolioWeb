@@ -26,39 +26,8 @@ nav a:hover {
      box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
 }
 
-.burbujaFooterWapp:hover {
-     box-shadow: inset 0 -0.3rem 0.8rem #0EA991;
-}
-
-.heroDivDerecha button:hover,
-.divBtnFormulario button:hover {
-     background-color: #ffffffab;
+.heroDivDerecha button:hover i {
      color: #D76627;
-     box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
-}
-
-.heroDivDerecha button:hover i,
-.divBtnFormulario button:hover {
-     color: #D76627;
-}
-
-
-.cuadroUnoSection2:hover span {
-     text-shadow: 0 0 0.5rem #61DAFB;
-}
-
-.cuadroDosSection2:hover span {
-     text-shadow: 0 0 0.5rem #61DAFB;
-}
-
-.bordeBottom:focus,
-.bordeBottom:hover {
-     box-shadow: 0 0.8rem 0.8rem -0.8rem #00c8ffbd;
-}
-
-.bordeTodo:focus,
-.bordeTodo:hover {
-     box-shadow: 0 0 0.8rem #00c8ffbd;
 }
 
 .div a {
@@ -134,13 +103,6 @@ nav a,
 .headerDivEmail p,
 .heroDivDerecha button,
 .heroDivDerecha button i,
-.cuadroUnoSection2 span,
-.cuadroDosSection2 span,
-.divBtnFormulario button,
-.bordeBottom,
-.bordeTodo,
-.burbujaFooterWapp,
-.burbujaFooter,
 .divBack a {
      transition: all 0.3s ease-in-out;
 }
