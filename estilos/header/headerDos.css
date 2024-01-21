@@ -46,10 +46,10 @@ nav a:hover {
 .linkEdin {
      height: 1rem;
      width: 1rem;
-     background-image: url(./imgs/icons8-linkedin.svg);
      background-repeat: no-repeat;
      background-position: center;
      background-size: 1rem;
+     color: #0772BB;
 }
 
 .github {
