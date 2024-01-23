@@ -1,0 +1,90 @@
+.containerFlexSection3 {
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     gap: 0.5rem;
+}
+
+.containerGridSection3 {
+     min-height: 60%;
+     display: grid;
+     grid-template-columns: repeat(3, 3fr);
+     grid-auto-rows: 5rem;
+     grid-gap: 4.3rem 2rem;
+}
+
+.cuadradosSection3 {
+     height: 6rem;
+     background-color: #1E2235;
+     border-radius: 0.5rem;
+     padding: 1.2rem;
+     align-items: center;
+     box-shadow: 0.4rem 0.4rem 0.2rem #0D0E1A;
+}
+
+@media screen and (max-width:767px) {
+
+     .containerFlexSection3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 85%;
+          gap: 5rem;
+     }
+
+     .containerGridSection3 {
+          min-height: 50%;
+          display: grid;
+          grid-template-columns: repeat(3, 3fr);
+          grid-auto-rows: 0.7rem;
+          grid-gap: 5rem 2rem;
+     }
+
+     .cuadradosSection3 {
+          height: 3.6rem;
+          padding: 0.85rem;
+     }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+     .containerFlexSection3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 85%;
+          min-height: 70vh;
+          max-height: 100vh;
+          gap: 9rem;
+          margin-bottom: 5rem;
+     }
+
+     .containerGridSection3 {
+          min-height: 50%;
+          display: grid;
+          grid-template-columns: repeat(3, 3fr);
+          grid-auto-rows: 0.7rem;
+          grid-gap: 9rem 2rem;
+     }
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+
+     .containerFlexSection3 {
+          min-height: 40vh;
+          margin-bottom: 5rem;
+     }
+
+     .containerGridSection3 {
+          grid-auto-rows: 0.3rem;
+          grid-gap: 14rem 1.5rem;
+     }
+
+     .cuadradosSection3 {
+          height: 8rem;
+          border-radius: 10%;
+          padding: 1.8rem;
+     }
+
+}
