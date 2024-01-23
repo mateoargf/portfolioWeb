@@ -26,31 +26,9 @@ body {
 
 /* comienza section 2 */
 
-.flecha1Section2,
-.flecha2Section2 {
-    display: none;
-}
-
-.section4 h2 {
-    color: #61DAFB;
-    font-weight: 48;
-    font-size: 2.3rem;
-}
-
-.section4 h2 span {
-    color: #FFF;
-    font-size: 2.2rem;
-}
-
 /* cominza section 3*/
 
 /* comienza el section 4 */
-
-.section4 {
-    min-height: 100vh;
-    width: 85vw;
-    margin: 0 auto;
-}
 
 .section4 h2 {
     text-align: center;
