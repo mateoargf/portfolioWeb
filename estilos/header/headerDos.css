@@ -26,10 +26,6 @@ nav a:hover {
      box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
 }
 
-.heroDivDerecha button:hover i {
-     color: #D76627;
-}
-
 .div a {
      text-shadow: 0 -4rem 0 #D76627;
 }
@@ -100,10 +96,7 @@ nav a:hover {
 nav a,
 .burbuja,
 .headerDivEmail,
-.headerDivEmail p,
-.heroDivDerecha button,
-.heroDivDerecha button i,
-.divBack a {
+.headerDivEmail p {
      transition: all 0.3s ease-in-out;
 }
 

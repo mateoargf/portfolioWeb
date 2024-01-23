@@ -24,150 +24,6 @@ body {
 
 /* comienza el hero */
 
-.hero {
-    border-bottom: 0.2rem solid #D76627;
-    margin-top: 6rem;
-}
-
-.divHero {
-    width: 85vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.heroMiNombre {
-    align-self: flex-end;
-    margin-bottom: 17vh;
-    animation: invisible 2s linear;
-}
-
-.heroMiNombre h2 {
-    font-size: 2.2rem;
-    font-weight: 48;
-}
-
-.fuenteBlanca {
-    color: #fff;
-}
-
-.heroMiNombre h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-
-.heroDivDerecha button:hover {
-    background-color: #ffffffab;
-    color: #D76627;
-    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
-}
-
-.heroDivDerecha {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.heroCode {
-    font-size: 4.5rem;
-    font-weight: bold;
-}
-
-.fuenteNaranja {
-    color: #D76627;
-}
-
-.fuenteCeleste {
-    color: #61DAFB;
-}
-
-.heroDivDerecha button {
-    height: 2.3rem;
-    width: 6rem;
-    background-color: #D76627;
-    color: #fff;
-    border: 0.12rem solid #fff;
-    outline: none;
-    box-shadow: none;
-    border-radius: 0.25rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: 0.8rem;
-    font-family: 'Pridi', serif;
-}
-
-.heroDivDerecha i {
-    color: #fff;
-}
-
-.marginBtm {
-    margin-bottom: 1rem;
-}
-
-.divHeroImagenes {
-    display: flex;
-}
-
-.divHeroProgramador {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: end;
-    position: relative;
-    animation: invisible 2s linear;
-    object-fit: cover;
-}
-
-.programador {
-    height: 85vh;
-    position: relative;
-    z-index: -5;
-    margin: 0 auto;
-}
-
-.circuloHero {
-    height: 80%;
-    width: 78%;
-    background-color: #111320;
-    border: 2rem solid #D76627;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -10;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: border-flicker 2.5s linear infinite;
-}
-
-.heroNodeJs,
-.heroJS,
-.heroReact {
-    position: absolute;
-    background-color: #1E2235;
-    border-radius: 50%;
-    padding: var(--heroLenguajesPadding);
-    height: var(--heroLenguajesHeight);
-}
-
-.heroNodeJs {
-    top: var(--heroLenguajesTop);
-    right: calc(var(--heroLenguajesRight)*0.7);
-}
-
-.heroJS {
-    top: calc(var(--heroLenguajesTop)*2);
-    right: calc(var(--heroLenguajesRight)*0);
-    padding: calc(var(--heroLenguajesPadding)*1.5);
-    height: calc(var(--heroLenguajesHeight)*1.5);
-}
-
-.heroReact {
-    padding: calc(var(--heroLenguajesPadding)*3);
-    height: calc(var(--heroLenguajesHeight)*2);
-}
-
 /* comienza section 2 */
 
 .section2 {
@@ -637,7 +493,8 @@ footer section h1 span {
 .bordeBottom,
 .burbujaFooterWapp,
 .bordeTodo,
-.burbujaFooter {
+.burbujaFooter,
+.divBack a {
     transition: all 0.3s ease-in-out;
 }
 
@@ -740,74 +597,6 @@ footer section h1 span {
     /* header */
 
     /* hero */
-
-    .divHero {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 85vw;
-        margin: 0 auto;
-    }
-
-    .heroMiNombre {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-
-    .heroDivDerecha button {
-        align-self: center;
-        font-size: 150%;
-        height: 7vh;
-        width: 50%;
-        margin-bottom: 4rem;
-    }
-
-    .divHeroProgramador {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .programador {
-        height: 50vh;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .heroNodeJs,
-    .heroJS,
-    .heroReact {
-        position: absolute;
-        background-color: #1E2235;
-        border-radius: 50%;
-        padding: calc(var(--heroLenguajesPadding)*0.5);
-        height: calc(var(--heroLenguajesHeight)*0.5);
-    }
-
-    .heroNodeJs {
-        top: calc(var(--heroLenguajesTop)/1.3);
-        right: calc(var(--heroLenguajesRight)*0.9);
-    }
-
-    .heroJS {
-        top: calc(var(--heroLenguajesTop)*1.8);
-        right: calc(var(--heroLenguajesRight)*-1.1);
-        padding: calc(var(--heroLenguajesPadding)*0.9);
-        height: calc(var(--heroLenguajesHeight)*0.9);
-    }
-
-    .heroReact {
-        padding: calc(var(--heroLenguajesPadding)*1.4);
-        height: calc(var(--heroLenguajesHeight)*1.4);
-        margin-bottom: 0.2rem;
-    }
-
-    .circuloHero {
-        height: 80%;
-        width: 100%;
-        border-width: 1.2rem;
-    }
 
     /* comienza section2 */
 
@@ -1011,73 +800,6 @@ footer section h1 span {
 
     /* hero */
 
-    .divHero {
-        flex-direction: column;
-        align-items: center;
-        width: 85vw;
-        margin: 0 auto;
-    }
-
-    .heroMiNombre {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .heroDivDerecha button {
-        align-self: center;
-        font-size: 150%;
-        height: 6vh;
-        width: 27%;
-        margin-bottom: 4rem;
-    }
-
-    .divHeroProgramador {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .programador {
-        height: 50vh;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .heroNodeJs,
-    .heroJS,
-    .heroReact {
-        position: absolute;
-        background-color: #1E2235;
-        border-radius: 50%;
-        padding: calc(var(--heroLenguajesPadding));
-        height: calc(var(--heroLenguajesHeight));
-    }
-
-    .heroNodeJs {
-        top: calc(var(--heroLenguajesTop)/2);
-        right: calc(var(--heroLenguajesRight)*1.2);
-    }
-
-    .heroJS {
-        top: calc(var(--heroLenguajesTop)*1.8);
-        right: calc(var(--heroLenguajesRight)*-0.1);
-        padding: calc(var(--heroLenguajesPadding)*1.4);
-        height: calc(var(--heroLenguajesHeight)*1.4);
-    }
-
-    .heroReact {
-        right: calc(var(--heroLenguajesRight)*-0.1);
-        padding: calc(var(--heroLenguajesPadding)*2);
-        height: calc(var(--heroLenguajesHeight)*2);
-        margin-bottom: 0.2rem;
-    }
-
-    .circuloHero {
-        height: 85%;
-        width: 85%;
-        border-width: 1.4rem;
-    }
-
     /* comienza section2 */
 
     .section2 {
@@ -1275,28 +997,6 @@ footer section h1 span {
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
     /* hero */
-
-    .programador {
-        height: 70vh;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .heroNodeJs {
-        right: calc(var(--heroLenguajesRight)*0.8);
-    }
-
-    .heroJS {
-        right: calc(var(--heroLenguajesRight)*-0.4);
-    }
-
-    .circuloHero {
-        height: 90%;
-        width: 90%;
-        border-width: 2rem;
-        transform: translateY(10%) translateX(-50%);
-    }
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
@@ -1319,62 +1019,6 @@ footer section h1 span {
     }
 
     /* hero */
-
-    .divHero {
-        justify-content: unset;
-    }
-
-    .heroMiNombre {
-        width: 30%;
-        margin-right: 10rem;
-    }
-
-    .heroMiNombre h2 {
-        font-size: 2.5rem;
-    }
-
-    .heroMiNombre h1 {
-        font-size: 4rem;
-    }
-
-    .programador {
-        height: 70vh;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .heroNodeJs,
-    .heroJS,
-    .heroReact {
-        padding: calc(var(--heroLenguajesPadding)*1.4);
-        height: calc(var(--heroLenguajesHeight)*1.4);
-    }
-
-    .heroNodeJs {
-        right: calc(var(--heroLenguajesRight)*0.3);
-    }
-
-    .heroJS {
-        top: calc(var(--heroLenguajesTop)*2.1);
-        right: calc(var(--heroLenguajesRight)*-0.6);
-        padding: calc(var(--heroLenguajesPadding)*2);
-        height: calc(var(--heroLenguajesHeight)*2);
-    }
-
-    .heroReact {
-        right: calc(var(--heroLenguajesRight)*-0.5);
-        padding: calc(var(--heroLenguajesPadding)*3);
-        height: calc(var(--heroLenguajesHeight)*3);
-        margin-bottom: 0.2rem;
-    }
-
-    .circuloHero {
-        height: 90%;
-        width: 90%;
-        border-width: 3rem;
-        transform: translateY(10%) translateX(-50%);
-    }
 
     /* section2 */
 

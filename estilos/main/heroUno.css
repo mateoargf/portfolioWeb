@@ -1,0 +1,128 @@
+.heroMiNombre {
+     align-self: flex-end;
+     margin-bottom: 17vh;
+     animation: invisible 2s linear;
+}
+
+.heroMiNombre h2 {
+     font-size: 2.2rem;
+     font-weight: 48;
+}
+
+.heroMiNombre h1 {
+     font-size: 3rem;
+     font-weight: bold;
+}
+
+.fuenteBlanca {
+     color: #fff;
+}
+
+.marginBtm {
+     margin-bottom: 1rem;
+}
+
+.fuenteCeleste {
+     color: #61DAFB;
+}
+
+.fuenteNaranja {
+     color: #D76627;
+}
+
+.heroCode {
+     font-size: 4.5rem;
+     font-weight: bold;
+}
+
+.heroDivDerecha button:hover i {
+     color: #D76627;
+}
+
+.heroDivDerecha button:hover {
+     background-color: #ffffffab;
+     color: #D76627;
+     box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
+}
+
+.heroDivDerecha {
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+}
+
+.heroDivDerecha button {
+     height: 2.3rem;
+     width: 6rem;
+     background-color: #D76627;
+     color: #fff;
+     border: 0.12rem solid #fff;
+     outline: none;
+     box-shadow: none;
+     border-radius: 0.25rem;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: nowrap;
+     font-size: 0.8rem;
+     font-family: 'Pridi', serif;
+}
+
+.heroDivDerecha i {
+     color: #fff;
+}
+
+.heroDivDerecha button,
+.heroDivDerecha button i {
+     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:767px) {
+
+     .heroMiNombre {
+          width: 90%;
+          margin: 0 auto;
+     }
+
+     .heroDivDerecha button {
+          align-self: center;
+          font-size: 150%;
+          height: 7vh;
+          width: 50%;
+          margin-bottom: 4rem;
+     }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+     .heroMiNombre {
+          width: 90%;
+          margin: 0 auto;
+     }
+
+     .heroDivDerecha button {
+          align-self: center;
+          font-size: 150%;
+          height: 6vh;
+          width: 27%;
+          margin-bottom: 4rem;
+     }
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+
+     .heroMiNombre {
+          width: 30%;
+          margin-right: 10rem;
+     }
+
+     .heroMiNombre h2 {
+          font-size: 2.5rem;
+     }
+
+     .heroMiNombre h1 {
+          font-size: 4rem;
+     }
+
+
+}
