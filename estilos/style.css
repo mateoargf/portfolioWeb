@@ -30,116 +30,6 @@ body {
 
 /* comienza el section 4 */
 
-.section4 h2 {
-    text-align: center;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
-}
-
-.timeLine {
-    display: grid;
-    grid-template-columns: 1fr 0.2rem 1fr;
-    min-height: 100vh;
-    grid-gap: 0 7rem;
-}
-
-.timeLineComponent {
-    height: 20rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.componentLeft {
-    margin-left: 5rem;
-}
-
-.anioContainerRight {
-    width: 100%;
-    display: flex;
-}
-
-.anioContainerLeft {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.anioUno {
-    clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-
-.anioDos {
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 15% 100%, 0 50%, 15% 0);
-}
-
-.anioContainerRight,
-.section4H3,
-.letraMaquinaEscribir {
-    margin-bottom: 1rem;
-}
-
-.anio {
-    height: 1.3rem;
-    width: 4rem;
-    background-color: #F17128;
-    color: #fff;
-    font-weight: 80;
-    font-size: 1rem;
-    padding: 0.1rem 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tiuloCelesteSection4 {
-    color: #61DAFB;
-    font-size: 1.5rem;
-    font-weight: 38;
-}
-
-.tituloBlancoSection4 {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 38;
-}
-
-.blancoResponabilidades {
-    color: #A7A8AD;
-    font-size: 1.2rem;
-    font-weight: 15;
-    letter-spacing: 0.1rem;
-}
-
-.letraMaquinaEscribir {
-    font-family: 'Pridi', serif;
-}
-
-.timeLineComponent ul {
-    margin-left: 1rem;
-    color: #E4E4E6;
-    font-size: 1.2rem;
-    font-weight: 15;
-    letter-spacing: 0.1rem;
-}
-
-.timeLineMiddle {
-    position: relative;
-    background-color: #F17128;
-}
-
-.timeLinePoint {
-    margin-top: 2rem;
-    height: 1.5rem;
-    width: 1.5rem;
-    position: absolute;
-    background-color: #111320;
-    border: 0.2rem solid #F17128;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 /* comienza el footer */
 
 footer {
@@ -450,63 +340,6 @@ footer section h1 span {
 
     /* comienza section4 */
 
-    .timeLine {
-        height: 120vh;
-        grid-template-columns: 0.2rem 1fr;
-        min-height: 70vh;
-        grid-gap: 0 3rem;
-        grid-template-areas:
-            "line event1"
-            "line2 event2"
-            "line3 event3";
-    }
-
-    .linea {
-        grid-area: line;
-    }
-
-    .lineaDos {
-        grid-area: line2;
-    }
-
-    .lineaTres {
-        grid-area: line3;
-    }
-
-    .event1 {
-        grid-area: event1;
-    }
-
-    .event2 {
-        grid-area: event2;
-    }
-
-    .event3 {
-        grid-area: event3;
-    }
-
-    .vacio {
-        grid-area: event0;
-    }
-
-    .timeLineComponent h3 {
-        font-size: 1.5rem;
-    }
-
-
-    .componentLeft {
-        margin-left: 0;
-    }
-
-    .anioContainerLeft {
-        justify-content: flex-start;
-    }
-
-    .letraMaquinaEscribir,
-    .letraMaquinaEscribir li {
-        font-size: 0.9rem;
-    }
-
     /* comienza el footer */
 
     footer section h1 {
@@ -571,64 +404,6 @@ footer section h1 span {
     /* comienza section3 */
 
     /* comienza section4 */
-
-    .timeLine {
-        height: 120vh;
-        grid-template-columns: 0.2rem 1fr;
-        min-height: 70vh;
-        grid-gap: 0 3rem;
-        grid-template-areas:
-            "line event1"
-            "line2 event2"
-            "line3 event3";
-    }
-
-    .linea {
-        grid-area: line;
-    }
-
-    .lineaDos {
-        grid-area: line2;
-    }
-
-    .lineaTres {
-        grid-area: line3;
-    }
-
-    .event1 {
-        grid-area: event1;
-    }
-
-    .event2 {
-        grid-area: event2;
-    }
-
-    .event3 {
-        grid-area: event3;
-    }
-
-    .vacio {
-        grid-area: event0;
-    }
-
-    .timeLineComponent h3 {
-        font-size: 1.8rem;
-    }
-
-
-    .componentLeft {
-        margin-left: 0;
-    }
-
-    .anioContainerLeft {
-        justify-content: flex-start;
-    }
-
-    .letraMaquinaEscribir,
-    .letraMaquinaEscribir li {
-        font-size: 1.2rem;
-    }
-
     /* comienza el footer */
 
     footer section h1 {
@@ -708,39 +483,9 @@ footer section h1 span {
     }
 
     /* hero */
-
     /* section2 */
-
-    .section4 h2,
-    .section4 h2 span {
-        font-size: 3rem;
-    }
     /* section3 */
     /* section4 */
-    .anioContainerRight p,
-    .anioContainerLeft p {
-        font-size: 1.5rem;
-        width: 6rem;
-        height: 2rem;
-    }
-
-    .timeLineComponent h3,
-    .timeLineComponent h3 span {
-        font-size: 2.2rem;
-        font-weight: bold;
-    }
-
-    .timeLineComponent p {
-        font-size: 1.8rem;
-    }
-
-    .timeLineComponent ul li {
-        margin-left: 0.9rem;
-        font-size: 1.8rem;
-        line-height: unset;
-        font-weight: 15;
-    }
-
     /* footer */
 
     footer {
