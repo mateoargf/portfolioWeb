@@ -1,0 +1,19 @@
+footer {
+     margin-top: 6rem;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     overflow: hidden;
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (min-width:768px) and (max-width:1023px) {}
+
+@media screen and (min-width:1024px) and (max-width:1440px) {}
+
+@media screen and (min-width:1041px) and (max-width:1920px) {
+     footer {
+          margin-top: 7rem;
+     }
+}

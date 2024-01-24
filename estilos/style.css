@@ -10,15 +10,6 @@ body {
     background-color: #111320;
 }
 
-:root {
-    --heroLenguajesHeight: 2.5rem;
-    --heroLenguajesPadding: 0.7rem;
-    --heroLenguajesTop: 22%;
-    --heroLenguajesRight: 10%;
-
-    --section2HeightIcons: 4.5rem;
-}
-
 
 /* comienza el header */
 
@@ -31,163 +22,6 @@ body {
 /* comienza el section 4 */
 
 /* comienza el footer */
-
-footer {
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-}
-
-footer section {
-    min-height: 80vh;
-    width: 85vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-footer section h1 {
-    color: #D76627;
-    font-size: 3.3rem;
-}
-
-footer section h1 span {
-    color: #fff;
-}
-
-.formulario {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.bordeBottom,
-.bordeTodo {
-    background-color: #111320;
-    color: #A7A8AD;
-    border: none;
-    font-family: 'Pridi', serif;
-    font-size: 1.2rem;
-    font-weight: 15;
-    letter-spacing: 0.1rem;
-    width: 30vw;
-    padding: 0.5rem 0.5rem 0.3rem 0.6rem;
-    outline: none;
-}
-
-
-.bordeBottom {
-    border-bottom: 0.15rem solid transparent;
-    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6, #00c8ffbd, #00c8ffb6) border-box;
-}
-
-.bordeTodo {
-    padding-top: 1rem;
-    padding-bottom: 20vh;
-    border: 0.15rem solid transparent;
-    border-radius: 0.5rem;
-    background: linear-gradient(#111320, #111320)padding-box, linear-gradient(45deg, #00c8ffbd, #00c8ffb6, #00c8ffbd, #00c8ffb6) border-box;
-}
-
-.divBtnFormulario {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-
-.divBtnFormulario button {
-    height: 2.5rem;
-    width: 7rem;
-    background-color: #D76627;
-    color: #fff;
-    border: 0.12rem solid #fff;
-    outline: none;
-    border-radius: 0.25rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 0.9rem;
-    font-family: 'Pridi', serif;
-    letter-spacing: 0.01rem;
-}
-
-.bordeBottom:focus,
-.bordeBottom:hover {
-    box-shadow: 0 0.8rem 0.8rem -0.8rem #00c8ffbd;
-}
-
-.divBtnFormulario button:hover {
-    background-color: #ffffffab;
-    color: #D76627;
-    box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
-}
-
-.orUno {
-    color: #fff;
-    font-size: 2.3rem;
-    font-weight: 48;
-    margin-top: 3rem;
-}
-
-.orDos {
-    color: #D76627;
-    font-size: 2.4rem;
-    font-weight: 48;
-}
-
-.orUno,
-.orDos {
-    margin-bottom: 1rem;
-}
-
-.orDos span {
-    color: #fff;
-}
-
-.divBurbujasFooter {
-    width: 19%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.burbujaFooter {
-    border: 0.12rem solid rgba(97, 218, 251, 0.2);
-    border-radius: 50%;
-    box-shadow: inset 0 -0.3rem 0.8rem rgba(97, 218, 251, 0.3);
-    padding: 0.9rem;
-    color: #61DAFC;
-    font-size: 1.9rem;
-}
-
-.divBack {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-bottom: 1rem;
-}
-
-.subDivBack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.divBack img {
-    height: 2rem;
-}
-
-.divBack a {
-    color: #D76627;
-    text-decoration: none;
-    border-bottom: 0.1rem solid #D76627;
-}
 
 .circuloFooterUno {
     position: absolute;
@@ -208,39 +42,6 @@ footer section h1 span {
     z-index: -10;
     left: 72%;
     top: 40%;
-}
-
-
-.burbujaFooterWapp {
-    border: 0.12rem solid rgba(14, 169, 145, 0.2);
-    border-radius: 50%;
-    box-shadow: inset 0 -0.3rem 0.8rem rgba(14, 169, 145, 0.3);
-    padding: 0.9rem;
-    color: #1BCD6B;
-    font-size: 1.9rem;
-}
-
-.bordeTodo:focus,
-.bordeTodo:hover {
-    box-shadow: 0 0 0.8rem #00c8ffbd;
-}
-
-.divBtnFormulario button,
-.bordeBottom,
-.burbujaFooterWapp,
-.bordeTodo,
-.burbujaFooter,
-.divBack a {
-    transition: all 0.3s ease-in-out;
-}
-
-.burbujaFooter:hover {
-    box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
-}
-
-
-.burbujaFooterWapp:hover {
-    box-shadow: inset 0 -0.3rem 0.8rem #0EA991;
 }
 
 /* comienza animaciones */
@@ -342,47 +143,6 @@ footer section h1 span {
 
     /* comienza el footer */
 
-    footer section h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    footer section h2 {
-        text-align: center;
-    }
-
-    .bordeBottom,
-    .bordeTodo {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .bordeTodo {
-        padding-bottom: 40%;
-    }
-
-    .divBtnFormulario {
-        justify-content: center;
-    }
-
-    .divBtnFormulario button {
-        width: 100%;
-    }
-
-    .orUno {
-        font-size: 1.8rem;
-        margin-top: 5rem;
-    }
-
-    .orDos {
-        font-size: 1.5rem;
-    }
-
-    .divBurbujasFooter {
-        width: 70%;
-        margin-bottom: 1rem;
-    }
-
     .circuloFooterDos {
         height: 50rem;
         width: 50rem;
@@ -406,47 +166,6 @@ footer section h1 span {
     /* comienza section4 */
     /* comienza el footer */
 
-    footer section h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    footer section h2 {
-        text-align: center;
-    }
-
-    .bordeBottom,
-    .bordeTodo {
-        font-size: 1.45rem;
-        width: 60vw;
-    }
-
-    .bordeTodo {
-        padding-bottom: 40%;
-    }
-
-    .divBtnFormulario {
-        justify-content: center;
-    }
-
-    .divBtnFormulario button {
-        width: 10rem;
-    }
-
-    .orUno {
-        font-size: 2rem;
-        margin-top: 7rem;
-    }
-
-    .orDos {
-        font-size: 1.7rem;
-    }
-
-    .divBurbujasFooter {
-        width: 30%;
-        margin-bottom: 1rem;
-    }
-
     .circuloFooterDos {
         height: 50rem;
         width: 50rem;
@@ -459,9 +178,7 @@ footer section h1 span {
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1440px) {
-    /* hero */
-}
+@media screen and (min-width:1024px) and (max-width:1440px) {}
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     /* header */
@@ -487,62 +204,6 @@ footer section h1 span {
     /* section3 */
     /* section4 */
     /* footer */
-
-    footer {
-        margin-top: 7rem;
-    }
-
-    footer section h1 {
-        font-size: 4.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .bordeBottom,
-    .bordeTodo {
-        font-size: 1.2rem;
-        width: 30vw;
-    }
-
-    .bordeTodo input,
-    .bordeBottom input {
-        font-size: 1.2rem;
-        border-bottom-width: 0.2rem;
-    }
-
-    .divBtnFormulario {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-    }
-
-    .divBtnFormulario button {
-        width: 20%;
-        height: 3.5rem;
-        font-size: 1.1rem;
-    }
-
-    .orUno {
-        font-size: 3.5rem;
-    }
-
-    .orDos {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .burbujaFooter {
-        padding: 1.5rem;
-        font-size: 3rem;
-    }
-
-    .divBack img {
-        height: 3rem;
-    }
-
-    .divBack a {
-        font-size: 1.5rem;
-    }
-
     .circuloFooterUno {
         height: 90rem;
         width: 90rem;
@@ -554,10 +215,5 @@ footer section h1 span {
         height: 90rem;
         width: 90rem;
         border-width: 3.3rem;
-    }
-
-    .burbujaFooterWapp {
-        padding: 1.5rem;
-        font-size: 3rem;
     }
 }
