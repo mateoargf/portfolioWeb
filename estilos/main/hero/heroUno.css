@@ -12,6 +12,8 @@
 .heroMiNombre h1 {
      font-size: 3rem;
      font-weight: bold;
+     display: flex;
+     align-items: center;
 }
 
 .fuenteBlanca {
@@ -33,6 +35,11 @@
 .heroCode {
      font-size: 4.5rem;
      font-weight: bold;
+}
+
+.heroDivDerecha h1 {
+     display: flex;
+     align-items: center;
 }
 
 .heroDivDerecha button:hover i {
@@ -82,6 +89,10 @@
      .heroMiNombre {
           width: 90%;
           margin: 0 auto;
+     }
+
+     .heroMiNombre h1 {
+          font-size: 2.3rem;
      }
 
      .heroDivDerecha button {

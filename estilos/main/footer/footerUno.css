@@ -21,24 +21,37 @@ footer section h1 span {
      background-color: #ffffffab;
      color: #D76627;
      box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
+     filter: contrast(110%);
 }
 
 .bordeBottom:focus,
 .bordeBottom:hover {
      box-shadow: 0 0.8rem 0.8rem -0.8rem #00c8ffbd;
+     filter: contrast(110%);
 }
 
 .bordeTodo:focus,
 .bordeTodo:hover {
      box-shadow: 0 0 0.8rem #00c8ffbd;
+     filter: contrast(110%);
 }
 
 .burbujaFooter:hover {
      box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
+     color: #1ecdfd;
+     filter: contrast(110%);
 }
 
-.burbujaFooterWapp:hover {
+.burbujaFooterWapp:hover,
+.burbujaFooterWapp:hover a {
      box-shadow: inset 0 -0.3rem 0.8rem #0EA991;
+     color: #00ff73;
+     filter: contrast(110%);
+}
+
+.subDivBack:hover a {
+     color: #f5f5f5;
+     filter: contrast(110%);
 }
 
 .formulario {
@@ -148,6 +161,7 @@ footer section h1 span {
      display: flex;
      flex-direction: column;
      align-items: center;
+     transition: all 0.3 ease-in-out;
 }
 
 .divBack img {
@@ -309,9 +323,10 @@ footer section h1 span {
           padding: 1.5rem;
           font-size: 3rem;
      }
+
      .burbujaFooterWapp {
-         padding: 1.5rem;
-         font-size: 3rem;
+          padding: 1.5rem;
+          font-size: 3rem;
      }
 
      .divBack img {

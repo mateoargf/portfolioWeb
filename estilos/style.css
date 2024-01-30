@@ -20,22 +20,4 @@ body {
 
 @media screen and (min-width:1024px) and (max-width:1440px) {}
 
-@media screen and (min-width:1441px) and (max-width:1920px) {
-    /* header */
-
-    header nav {
-        font-size: 1.5rem;
-        margin-left: 1.2rem;
-    }
-
-    .divHeaderIcons {
-        width: 70%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .headerIcons {
-        margin-left: auto;
-    }
-}
+@media screen and (min-width:1441px) and (max-width:1920px) {}
