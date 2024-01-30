@@ -64,6 +64,84 @@
      animation: border-flicker 2.5s linear infinite;
 }
 
+@keyframes invisible {
+     0% {
+          opacity: 0;
+     }
+
+     10% {
+          opacity: 0.1;
+     }
+
+     25% {
+          opacity: 0.2;
+     }
+
+     50% {
+          opacity: 0.5;
+     }
+
+     75% {
+          opacity: 0.7;
+     }
+
+     80% {
+          opacity: 0.8;
+     }
+
+     90% {
+          opacity: 0.9;
+     }
+
+     100% {
+          opacity: 1;
+     }
+}
+
+@keyframes border-flicker {
+     0% {
+          opacity: 0.1;
+          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          box-shadow: 0 -1.5rem 10rem #d865286c;
+     }
+
+     2% {
+          opacity: 1;
+          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          box-shadow: 0 -1.5rem 10rem #d865286c;
+     }
+
+     4% {
+          opacity: 0.1;
+          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          box-shadow: 0 -1.5rem 10rem #d66427e6;
+     }
+
+     8% {
+          opacity: 1;
+          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          box-shadow: 0 -1.5rem 10rem #d66427e6;
+     }
+
+     70% {
+          opacity: 0.7;
+          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          box-shadow: 0 -1.5rem 10rem #d66427e6;
+     }
+
+     100% {
+          opacity: 1;
+          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+          box-shadow: 0 -1.5rem 10rem #d66427e6;
+     }
+}
+
 @media screen and (max-width:767px) {
 
      .divHeroProgramador {
