@@ -5,6 +5,7 @@
 .divSection2 {
      display: flex;
      width: 100%;
+     gap: 0.5rem;
 }
 
 .divSection2 h3 {
@@ -132,13 +133,6 @@
           width: 45%;
      }
 
-}
-
-
-@media screen and (min-width:1024px) and (max-width:1440px) {
-     .cuadroUnoSection2:hover {
-          /* width: calc(0% + 3%); */
-     }
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {

@@ -18,10 +18,12 @@ footer section h1 span {
 }
 
 .divBtnFormulario button:hover {
-     background-color: #ffffffab;
-     color: #D76627;
-     box-shadow: 0.1rem 0.1rem 0.8rem #ffffff34;
+     cursor: pointer;
      filter: contrast(110%);
+     background-color: #ffffff;
+     color: #fc6e22;
+     box-shadow: 0.1rem 0.1rem 0.7rem #ffffff42;
+     opacity: 0.8;
 }
 
 .bordeBottom:focus,
