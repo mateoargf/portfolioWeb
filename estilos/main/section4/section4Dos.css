@@ -1,12 +1,11 @@
 .timeLine {
      display: grid;
      grid-template-columns: 1fr 0.2rem 1fr;
-     min-height: 100vh;
-     grid-gap: 0 7rem;
+     grid-gap: 0 7rem; 
 }
 
 .timeLineComponent {
-     height: 20rem;
+     min-height: 20rem;
      margin-top: 2rem;
      display: flex;
      flex-direction: column;
@@ -35,6 +34,7 @@
      clip-path: polygon(100% 0, 100% 50%, 100% 100%, 15% 100%, 0 50%, 15% 0);
 }
 
+.anioContainerLeft,
 .anioContainerRight,
 .section4H3,
 .letraMaquinaEscribir {
@@ -108,9 +108,7 @@
      }
 
      .timeLine {
-          height: 120vh;
           grid-template-columns: 0.2rem 1fr;
-          min-height: 70vh;
           grid-gap: 0 3rem;
           grid-template-areas:
                "line event1"
@@ -172,9 +170,7 @@
      }
 
      .timeLine {
-          height: 120vh;
           grid-template-columns: 0.2rem 1fr;
-          min-height: 70vh;
           grid-gap: 0 3rem;
           grid-template-areas:
                "line event1"
