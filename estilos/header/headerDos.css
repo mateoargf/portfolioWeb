@@ -7,13 +7,13 @@ nav a {
 
 nav a:focus {
      border-bottom: 0.2rem solid #D76627;
-     filter: contrast(110%);
+     filter: contrast(120%);
 }
 
 nav a:hover {
      border-bottom: 0.2rem solid #D76627;
      color: #61DAFB;
-     filter: contrast(110%);
+     filter: contrast(120%);
 }
 
 .headerDivEmail:hover {
@@ -29,7 +29,7 @@ nav a:hover {
 .burbuja:hover a {
      box-shadow: inset 0 -0.3rem 0.8rem #0772BB;
      color: #1ecdfd;
-     filter: contrast(200%);
+     filter: contrast(120%);
 }
 
 .div a {

@@ -2,6 +2,17 @@
      --section2HeightIcons: 4.5rem;
 }
 
+.cuadroUnoSection2:hover {
+     cursor: pointer;
+     opacity: 1;
+     filter: contrast(120%);
+     width: 5%;
+}
+
+.cuadroUnoSection2:hover span {
+     text-shadow: 0 0 0.5rem #61DAFB;
+}
+
 .divSection2 {
      display: flex;
      width: 100%;
@@ -59,19 +70,8 @@
      object-fit: cover;
 }
 
-.cuadroUnoSection2 span {
-     transition: all 0.3s ease-in-out;
-}
-
-.cuadroUnoSection2:hover {
-     cursor: pointer;
-     opacity: 1;
-     filter: contrast(120%);
-     width: 5%;
-}
-
-.cuadroUnoSection2:hover span {
-     text-shadow: 0 0 0.5rem #61DAFB;
+.cuadroUnoSection2 {
+     transition: all 0.6s ease-in-out;
 }
 
 @media screen and (max-width:767px) {
@@ -154,10 +154,6 @@
 
      .cuadroUnoSection2 p {
           font-size: 2.2rem;
-     }
-
-     .cuadroUnoSection2:hover {
-          /* width: calc(0% + 3%); */
      }
 
 }

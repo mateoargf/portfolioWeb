@@ -11,7 +11,7 @@
      justify-content: flex-end;
      align-items: end;
      position: relative;
-     animation: invisible 2s linear;
+     animation: invisible 1.5s linear;
      object-fit: cover;
 }
 
@@ -67,10 +67,6 @@
           opacity: 0;
      }
 
-     10% {
-          opacity: 0.1;
-     }
-
      25% {
           opacity: 0.2;
      }
@@ -83,14 +79,6 @@
           opacity: 0.7;
      }
 
-     80% {
-          opacity: 0.8;
-     }
-
-     90% {
-          opacity: 0.9;
-     }
-
      100% {
           opacity: 1;
      }
@@ -99,44 +87,50 @@
 @keyframes border-flicker {
      0% {
           opacity: 0.1;
-          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
-          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -webkit-box-shadow: 0 0 2rem 0.4rem #f0661ce6;
+          -moz-box-shadow: 0 0 2rem 0.4rem #d66427e6;
           box-shadow: 0 -1.5rem 10rem #d865286c;
+          filter: contrast(120%);
      }
 
      2% {
           opacity: 1;
-          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
-          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -webkit-box-shadow: 0 0 2rem 0.4rem #f0661ce6;
+          -moz-box-shadow: 0 0 2rem 0.4rem #d66427e6;
           box-shadow: 0 -1.5rem 10rem #d865286c;
+          filter: contrast(120%);
      }
 
      4% {
           opacity: 0.1;
-          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
-          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -webkit-box-shadow: 0 0 2rem 0.4rem #f0661ce6;
+          -moz-box-shadow: 0 0 2rem 0.4rem #d66427e6;
           box-shadow: 0 -1.5rem 10rem #d66427e6;
+          filter: contrast(120%);
      }
 
      8% {
           opacity: 1;
-          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
-          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          -webkit-box-shadow: 0 0 2rem 0.4rem #f0661ce6;
+          -moz-box-shadow: 0 0 2rem 0.4rem #d66427e6;
           box-shadow: 0 -1.5rem 10rem #d66427e6;
+          filter: contrast(120%);
      }
 
      70% {
-          opacity: 0.7;
-          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
-          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.9);
+          opacity: 0.5;
+          -webkit-box-shadow: 0 0 2rem 0.4rem #f0661ce6;
+          -moz-box-shadow: 0 0 2rem 0.4rem #d66427e6;
           box-shadow: 0 -1.5rem 10rem #d66427e6;
+          filter: contrast(120%);
      }
 
      100% {
           opacity: 1;
-          -webkit-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
-          -moz-box-shadow: 0 0 2rem 0.4rem rgba(214, 100, 39, 0.73);
+          -webkit-box-shadow: 0 0 2rem 0.4rem #d66427ba;
+          -moz-box-shadow: 0 0 2rem 0.4rem #d66427ba;
           box-shadow: 0 -1.5rem 10rem #d66427e6;
+          filter: contrast(120%);
      }
 }
 
