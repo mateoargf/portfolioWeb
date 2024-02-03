@@ -88,6 +88,40 @@
      transition: all 0.3s ease-in-out;
 }
 
+@keyframes invisible {
+     0% {
+          opacity: 0;
+     }
+
+     10% {
+          opacity: 0.1;
+     }
+
+     25% {
+          opacity: 0.2;
+     }
+
+     50% {
+          opacity: 0.5;
+     }
+
+     75% {
+          opacity: 0.7;
+     }
+
+     80% {
+          opacity: 0.8;
+     }
+
+     90% {
+          opacity: 0.9;
+     }
+
+     100% {
+          opacity: 1;
+     }
+}
+
 @media screen and (max-width:767px) {
 
      .heroMiNombre {

@@ -1,0 +1,34 @@
+.section1 h2 {
+     color: #61DAFB;
+     font-weight: 48;
+     font-size: 2.3rem;
+     margin-bottom: 5rem;
+     margin-top: 5rem;
+}
+
+.section1 h2 span {
+     color: #FFF;
+     font-size: 2.2rem;
+}
+
+
+@media screen and (max-width:767px) {
+
+     .section1 h2 {
+          margin-bottom: 2rem;
+     }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+     .section1 h2 {
+          margin-top: 0;
+     }
+}
+
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+     .section1 h2,
+     .section1 h2 span {
+          font-size: 3rem;          
+     }
+}
